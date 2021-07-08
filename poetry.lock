@@ -1,14 +1,23 @@
 [[package]]
-category = "main"
-description = "Python Game Development"
 name = "pygame"
+version = "2.0.1"
+description = "Python Game Development"
+category = "main"
 optional = false
 python-versions = "*"
-version = "2.0.1"
+
+[[package]]
+name = "pytmx"
+version = "3.25"
+description = "loads tiled tmx maps.  for python 3.3+"
+category = "main"
+optional = false
+python-versions = "*"
 
 [metadata]
-content-hash = "27309c8853b0cdee3cfb092c49c2414523175407363ab871fdf780177f39f616"
+lock-version = "1.1"
 python-versions = "^3.8"
+content-hash = "efadb821c31dafab72e5a174296368b6f82760c8b36e4a98b95ce7ec9789e1cb"
 
 [metadata.files]
 pygame = [
@@ -53,4 +62,7 @@ pygame = [
     {file = "pygame-2.0.1-pp37-pypy37_pp73-manylinux2010_i686.whl", hash = "sha256:a4e35d89b6754941e82df1ce980a1c370943d3c076938d94ed1e48165dd6a11b"},
     {file = "pygame-2.0.1-pp37-pypy37_pp73-manylinux2010_x86_64.whl", hash = "sha256:b812285d23b5644c643a6ae30553a772f935f47f61826660b108b8727936384b"},
     {file = "pygame-2.0.1.tar.gz", hash = "sha256:8b1e7b63f47aafcdd8849933b206778747ef1802bd3d526aca45ed77141e4001"},
+]
+pytmx = [
+    {file = "PyTMX-3.25.tar.gz", hash = "sha256:5f835e96a83390593b302f5d9929ab79e444c70414036c2f95d4cf327441013c"},
 ]

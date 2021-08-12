@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<tileset version="1.5" tiledversion="1.7.0" name="SpacePlatformer" tilewidth="70" tileheight="70" tilecount="112" columns="0">
+<tileset version="1.5" tiledversion="1.7.0" name="SpacePlatformer" tilewidth="70" tileheight="70" tilecount="114" columns="0">
  <grid orientation="orthogonal" width="1" height="1"/>
  <tile id="0">
   <image width="70" height="70" source="kenney_platformerpack_industrial/PNG/Default size/platformIndustrial_040.png"/>
@@ -336,5 +336,11 @@
  </tile>
  <tile id="111">
   <image width="70" height="70" source="kenney_platformerpack_industrial/PNG/Default size/platformIndustrial_039.png"/>
+ </tile>
+ <tile id="112">
+  <image width="70" height="70" source="custom_tiles/brick.png"/>
+ </tile>
+ <tile id="113">
+  <image width="70" height="70" source="custom_tiles/brick_grass.png"/>
  </tile>
 </tileset>

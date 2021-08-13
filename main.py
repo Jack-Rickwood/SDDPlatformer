@@ -7,6 +7,9 @@ size = width, height = 1000, 600
 display = pygame.display.set_mode(size)
 pygame.display.set_caption('SDD Platformer')
 clock = pygame.time.Clock()
+pygame.mixer.pre_init(44100, -16, 2, 2048)
+pygame.mixer.init()
+pygame.mixer.music.load("Assets/Audio/Main.mp3")
 
 # Declaring Global Variables
 fall_speed = 1
@@ -218,7 +221,7 @@ def game_loop():
                 mouse_pos = event.pos
                 if button.collidepoint(mouse_pos):
                     return
-        
+
         pygame.display.update()
         pygame.display.flip()
         clock.tick(30)
@@ -297,6 +300,7 @@ def title_screen():
         pygame.display.flip()
 
 while True:
+    pygame.mixer.music.play(-1,0.0)
     current_level = title_screen()
     tiled_setup(current_level)
     game_loop()
